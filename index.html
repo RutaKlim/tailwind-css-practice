@@ -7,37 +7,173 @@
     <title>Tailwind CSS practice</title>
   </head>
   <body class="bg-black">
-    <div
-      class="m-10 inline-flex content-center items-center gap-8 rounded-3xl bg-gray-800 p-8"
-    >
-      <span
-        class="content-center rounded-full border border-pink-300/10 bg-pink-400/10 p-4"
+    <div class="group inline">
+      <div
+        class="m-10 inline-flex w-lg content-center items-center gap-8 rounded-3xl bg-gray-800 p-8 group-hover:bg-gray-900"
       >
-        <svg
-          class="size-8 stroke-pink-500"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6"
+        <span
+          class="content-center rounded-full border border-pink-300/10 bg-pink-400/10 p-4 group-hover:bg-pink-600/10"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-          />
-        </svg>
-      </span>
-      <div>
-        <p class="mb-1 text-xl text-gray-400">
-          <span class="font-medium text-white">Ruta</span> mentioned you in
-          <span class="font-medium text-white">Logo redesign</span>
-        </p>
-        <time class="text-lg text-gray-500">10.50pm</time>
+          <svg
+            class="size-8 stroke-pink-500"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+            />
+          </svg>
+        </span>
+        <div>
+          <p class="mb-1 text-xl text-gray-400">
+            <span
+              class="cursor-pointer font-medium text-white hover:text-gray-200"
+              >Ruta</span
+            >
+            mentioned you in
+            <span class="font-medium text-white">Logo redesign</span>
+          </p>
+          <time class="text-lg text-gray-500">10.50pm</time>
+        </div>
       </div>
-      <div></div>
     </div>
+
+    <ul class="m-10 inline-flex flex-col gap-3 rounded-3xl bg-gray-900 p-5">
+      <li
+        class="group/item flex w-lg items-center rounded-3xl bg-gray-900 p-6 hover:bg-gray-800"
+      >
+        <span
+          class="rounded-full border border-purple-400/20 bg-fuchsia-500/10 p-4"
+          ><svg
+            class="size-9 stroke-purple-400/80"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
+        </span>
+        <div class="ml-6">
+          <p class="mb-1 text-xl font-bold text-stone-100">Tommy K</p>
+          <p class="text-lg text-gray-500">Co-Founder / CEO</p>
+        </div>
+        <a
+          class="group/call invisible ml-auto inline-flex cursor-pointer items-center gap-2 rounded-full px-6 py-2 text-gray-500 group-hover/item:visible hover:bg-gray-300"
+          ><span class="text-lg group-hover/call:text-gray-600">Call</span
+          ><svg
+            class="size-5 text-gray-500 group-hover/call:text-gray-600"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="group/item flex w-lg items-center rounded-3xl bg-gray-900 p-6 hover:bg-gray-800"
+      >
+        <span
+          class="rounded-full border border-purple-400/20 bg-fuchsia-500/10 p-4"
+          ><svg
+            class="size-9 stroke-purple-400/80"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
+        </span>
+        <div class="ml-6">
+          <p class="mb-1 text-xl font-bold text-stone-100">Tommy K</p>
+          <p class="text-lg text-gray-500">Co-Founder / CEO</p>
+        </div>
+        <a
+          class="group/call invisible ml-auto inline-flex cursor-pointer items-center gap-2 rounded-full px-6 py-2 text-gray-500 group-hover/item:visible hover:bg-gray-300"
+          ><span class="text-lg group-hover/call:text-gray-600">Call</span
+          ><svg
+            class="size-5 text-gray-500 group-hover/call:text-gray-600"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="group/item flex w-lg items-center rounded-3xl bg-gray-900 p-6 hover:bg-gray-800"
+      >
+        <span
+          class="rounded-full border border-purple-400/20 bg-fuchsia-500/10 p-4"
+          ><svg
+            class="size-9 stroke-purple-400/80"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
+        </span>
+        <div class="ml-6">
+          <p class="mb-1 text-xl font-bold text-stone-100">Tommy K</p>
+          <p class="text-lg text-gray-500">Co-Founder / CEO</p>
+        </div>
+        <a
+          class="group/call invisible ml-auto inline-flex cursor-pointer items-center gap-2 rounded-full px-6 py-2 text-gray-500 group-hover/item:visible hover:bg-gray-300"
+          ><span class="text-lg group-hover/call:text-gray-600">Call</span
+          ><svg
+            class="size-5 text-gray-500 group-hover/call:text-gray-600"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
 
     <script type="module" src="src/main.js"></script>
   </body>
