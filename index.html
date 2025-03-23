@@ -9,7 +9,7 @@
   <body class="bg-black">
     <div class="group inline">
       <div
-        class="m-10 inline-flex w-lg content-center items-center gap-8 rounded-3xl bg-gray-800 p-8 group-hover:bg-gray-900"
+        class="m-10 inline-flex max-w-lg content-center items-center gap-8 rounded-3xl bg-gray-800 p-8 group-hover:bg-gray-900"
       >
         <span
           class="content-center rounded-full border border-pink-300/10 bg-pink-400/10 p-4 group-hover:bg-pink-600/10"
@@ -43,9 +43,9 @@
       </div>
     </div>
 
-    <ul class="m-10 inline-flex flex-col gap-3 rounded-3xl bg-gray-900 p-5">
+    <ul class="m-10 inline-flex w-lg flex-col gap-3 rounded-3xl bg-gray-900">
       <li
-        class="group/item flex w-lg items-center rounded-3xl bg-gray-900 p-6 hover:bg-gray-800"
+        class="group/item m-5 flex items-center rounded-3xl bg-gray-900 p-6 hover:bg-gray-800"
       >
         <span
           class="rounded-full border border-purple-400/20 bg-fuchsia-500/10 p-4"
@@ -69,7 +69,7 @@
           <p class="text-lg text-gray-500">Co-Founder / CEO</p>
         </div>
         <a
-          class="group/call invisible ml-auto inline-flex cursor-pointer items-center gap-2 rounded-full px-6 py-2 text-gray-500 group-hover/item:visible hover:bg-gray-300"
+          class="group/call invisible ml-auto inline-flex cursor-pointer items-center gap-2 rounded-full px-6 py-2 text-gray-500 group-hover/item:visible hover:bg-gray-300 hover:shadow-lg hover:shadow-gray-900"
           ><span class="text-lg group-hover/call:text-gray-600">Call</span
           ><svg
             class="size-5 text-gray-500 group-hover/call:text-gray-600"
@@ -88,7 +88,7 @@
         </a>
       </li>
       <li
-        class="group/item flex w-lg items-center rounded-3xl bg-gray-900 p-6 hover:bg-gray-800"
+        class="group/item m-5 flex items-center rounded-3xl bg-gray-900 p-6 hover:bg-gray-800"
       >
         <span
           class="rounded-full border border-purple-400/20 bg-fuchsia-500/10 p-4"
@@ -112,7 +112,7 @@
           <p class="text-lg text-gray-500">Co-Founder / CEO</p>
         </div>
         <a
-          class="group/call invisible ml-auto inline-flex cursor-pointer items-center gap-2 rounded-full px-6 py-2 text-gray-500 group-hover/item:visible hover:bg-gray-300"
+          class="group/call invisible ml-auto inline-flex cursor-pointer items-center gap-2 rounded-full px-6 py-2 text-gray-500 group-hover/item:visible hover:bg-gray-300 hover:shadow-lg hover:shadow-gray-900"
           ><span class="text-lg group-hover/call:text-gray-600">Call</span
           ><svg
             class="size-5 text-gray-500 group-hover/call:text-gray-600"
@@ -131,7 +131,7 @@
         </a>
       </li>
       <li
-        class="group/item flex w-lg items-center rounded-3xl bg-gray-900 p-6 hover:bg-gray-800"
+        class="group/item m-5 flex items-center rounded-3xl bg-gray-900 p-6 hover:bg-gray-800"
       >
         <span
           class="rounded-full border border-purple-400/20 bg-fuchsia-500/10 p-4"
@@ -155,7 +155,7 @@
           <p class="text-lg text-gray-500">Co-Founder / CEO</p>
         </div>
         <a
-          class="group/call invisible ml-auto inline-flex cursor-pointer items-center gap-2 rounded-full px-6 py-2 text-gray-500 group-hover/item:visible hover:bg-gray-300"
+          class="group/call invisible ml-auto inline-flex cursor-pointer items-center gap-2 rounded-full px-6 py-2 text-gray-500 group-hover/item:visible hover:bg-gray-300 hover:shadow-lg hover:shadow-gray-900"
           ><span class="text-lg group-hover/call:text-gray-600">Call</span
           ><svg
             class="size-5 text-gray-500 group-hover/call:text-gray-600"
@@ -174,6 +174,38 @@
         </a>
       </li>
     </ul>
+
+    <div class="m-10 inline-block max-w-xl rounded-3xl bg-gray-900 p-7">
+      <div class="mb-5 text-lg text-white/80">Catagories</div>
+      <ul
+        class="flex cursor-pointer flex-wrap justify-center gap-3 *:rounded-full *:border *:border-sky-100/10 *:bg-sky-500/10 *:px-3 *:py-1 *:text-lg *:text-sky-300 *:hover:scale-105 *:hover:bg-sky-600/10 *:hover:text-sky-200"
+      >
+        <li>Sales</li>
+        <li>Marketing</li>
+        <li>SEO</li>
+        <li>Analytics</li>
+        <li>Design</li>
+        <li>Strategy</li>
+        <li>Security</li>
+        <li>Growth</li>
+        <li>Mobile</li>
+      </ul>
+    </div>
+
+    <figure class="m-10 max-w-xl overflow-hidden rounded-3xl">
+      <div class="h-100 overflow-hidden">
+        <img class="w-auto" src="src/img/city.jpg" />
+      </div>
+      <div class="bg-amber-100 p-8">
+        <div class="mb-3">The City</div>
+        <div class="mb-2">Come visit the city any time of the year!</div>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea provident
+          explicabo veritatis, cumque hic quidem, quos culpa sapiente voluptas
+          ipsam cupiditate alias praesentium fuga.
+        </p>
+      </div>
+    </figure>
 
     <script type="module" src="src/main.js"></script>
   </body>
