@@ -6,22 +6,24 @@
     <link rel="stylesheet" href="style.css" />
     <title>Tailwind CSS - Pinterest</title>
   </head>
-  <body>
+  <body class="relative">
     <!-- Navigation -->
-    <nav class="mx-12 my-8 flex items-center gap-12 text-nowrap">
-      <a href="#" class="shrink-0"
+    <nav
+      class="fixed top-0 mx-12 flex w-full items-center bg-white pt-2 pb-2 text-nowrap"
+    >
+      <a href="#" class="mr-12 shrink-0"
         ><img
           src="img/img/Pinterest-logo.png"
           alt="Pinterest logo"
           class="w-12"
         />
       </a>
-      <a class="font-lg-bold text-lg" href="#">Home</a>
-      <a class="font-lg-bold text-lg" href="#">Explore</a>
-      <a class="font-lg-bold text-lg" href="#">Create</a>
+      <a class="font-lg-bold mr-12 text-lg" href="#">Home</a>
+      <a class="font-lg-bold mr-12 text-lg" href="#">Explore</a>
+      <a class="font-lg-bold mr-12 text-lg" href="#">Create</a>
       <!-- Search bar -->
       <div
-        class="flex h-13 w-full cursor-pointer items-center rounded-full bg-gray-100 px-5"
+        class="flex h-13 w-full cursor-pointer items-center rounded-full bg-gray-100 px-5 hover:bg-gray-200"
       >
         <svg
           class="mr-3 size-8 shrink-0 stroke-2 text-gray-400"
@@ -39,12 +41,12 @@
         </svg>
         <input
           type="text"
-          placeholder="Search your pins"
+          placeholder="Search your Pins"
           class="w-full bg-transparent focus:outline-none"
         />
-        <div>|</div>
         <!-- Your pins in search bar -->
-        <div class="font-lg-bold text-md ml-8 flex items-center gap-2">
+        <span class="h-8 w-1 rounded-full bg-gray-300"></span>
+        <div class="font-lg-bold text-md ml-6 flex items-center gap-2">
           <span class="text-gray-800">Your Pins</span
           ><span>
             <svg
@@ -65,9 +67,9 @@
         </div>
       </div>
       <!-- Rest of nav icons -->
-      <a href="#">
+      <a href="#" class="group mx-4 rounded-full p-2 hover:bg-gray-200">
         <svg
-          class="size-9 fill-gray-400 text-white"
+          class="size-9 fill-gray-400 text-white group-hover:text-gray-200"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -81,9 +83,9 @@
           />
         </svg>
       </a>
-      <a href="#">
+      <a href="#" class="group mr-4 rounded-full p-2 hover:bg-gray-200">
         <svg
-          class="size-9 fill-gray-400 text-white"
+          class="size-9 fill-gray-400 text-white group-hover:text-gray-200"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -97,8 +99,15 @@
           />
         </svg>
       </a>
-      <a href="#">R</a>
-      <a href="#">
+      <a
+        href="#"
+        class="mr-4 flex items-center justify-center rounded-full p-3 hover:bg-gray-200"
+        ><span
+          class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-gray-600 bg-gray-200 p-3"
+          >R</span
+        ></a
+      >
+      <a href="#" class="mr-4 rounded-full p-1 hover:bg-gray-200">
         <svg
           class="size-7 stroke-2 text-gray-400"
           xmlns="http://www.w3.org/2000/svg"
@@ -115,6 +124,129 @@
         </svg>
       </a>
     </nav>
+    <!-- Profile section -->
+    <div class="mt-40 mb-5 flex justify-center">
+      <section class="flex flex-col items-center justify-center">
+        <div
+          class="font-lg-bold mb-3 flex h-32 w-32 items-center justify-center rounded-full bg-gray-200 text-6xl"
+        >
+          R
+        </div>
+        <div class="mb-4 flex items-baseline">
+          <span class="font-lg-bold text-4xl">Rutaklim</span>
+          <svg
+            class="size-7"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="mb-3 flex items-center gap-1">
+          <svg
+            class="fill-gray-500"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2C6.477,2,2,6.477,2,12c0,4.237,2.636,7.855,6.356,9.312c-0.087-0.791-0.167-2.005,0.035-2.868 c0.182-0.78,1.172-4.971,1.172-4.971s-0.299-0.599-0.299-1.484c0-1.391,0.806-2.428,1.809-2.428c0.853,0,1.265,0.641,1.265,1.408 c0,0.858-0.546,2.141-0.828,3.329c-0.236,0.996,0.499,1.807,1.481,1.807c1.777,0,3.143-1.874,3.143-4.579 c0-2.394-1.72-4.068-4.177-4.068c-2.845,0-4.515,2.134-4.515,4.34c0,0.859,0.331,1.781,0.744,2.282 c0.082,0.099,0.093,0.186,0.069,0.287c-0.076,0.316-0.244,0.995-0.277,1.134c-0.043,0.183-0.145,0.222-0.334,0.133 c-1.249-0.582-2.03-2.408-2.03-3.874c0-3.154,2.292-6.052,6.608-6.052c3.469,0,6.165,2.472,6.165,5.776 c0,3.447-2.173,6.22-5.189,6.22c-1.013,0-1.966-0.527-2.292-1.148c0,0-0.502,1.909-0.623,2.378 c-0.226,0.868-0.835,1.958-1.243,2.622C9.975,21.843,10.969,22,12,22c5.522,0,10-4.478,10-10S17.523,2,12,2z"
+            ></path>
+          </svg>
+          <span class="text-gray-500">rutaklim</span>
+        </div>
+        <div class="*:font-lg-bold mb-4 flex text-nowrap">
+          <span><span>3</span> followers</span
+          ><span class="mx-2 mt-3 h-0.5 w-0.5 rounded-full bg-black"></span
+          ><span><span>3</span> following</span>
+        </div>
+        <div class="flex gap-2">
+          <button
+            class="font-lg-bold cursor-pointer rounded-full bg-gray-100 px-7 py-4 text-lg hover:bg-gray-200"
+          >
+            Share
+          </button>
+          <button
+            class="font-lg-bold cursor-pointer rounded-full bg-gray-100 px-7 py-4 text-lg hover:bg-gray-200"
+          >
+            Edit profile
+          </button>
+        </div>
+      </section>
+    </div>
+    <!-- 'Created' and 'Saved' headers-->
+    <div class="flex justify-center gap-8">
+      <button
+        class="font-lg-bold relative rounded-lg px-3 py-2 text-lg hover:bg-gray-100"
+      >
+        <span
+          class="absolute -bottom-1 hidden h-1 w-17 rounded-full bg-black"
+        ></span>
+        Created
+      </button>
+      <button
+        class="font-lg-bold hidden:hover:bg-gray-100 relative rounded-lg px-3 py-2 text-lg"
+      >
+        <span class="absolute -bottom-1 h-1 w-13 rounded-full bg-black"></span>
+        Saved
+      </button>
+    </div>
+    <!-- Sort and add btns -->
+    <div class="mb-10 flex justify-between px-8">
+      <button class="cursor-pointer rounded-full p-3 hover:bg-gray-200">
+        <svg
+          class="size-10"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M18.75 12.75h1.5a.75.75 0 0 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5ZM12 6a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 12 6ZM12 18a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 12 18ZM3.75 6.75h1.5a.75.75 0 1 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5ZM5.25 18.75h-1.5a.75.75 0 0 1 0-1.5h1.5a.75.75 0 0 1 0 1.5ZM3 12a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 3 12ZM9 3.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM12.75 12a2.25 2.25 0 1 1 4.5 0 2.25 2.25 0 0 1-4.5 0ZM9 15.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z"
+          />
+        </svg>
+      </button>
+      <button class="cursor-pointer rounded-full p-3 hover:bg-gray-200">
+        <svg
+          class="size-10"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- help btn (br) -->
+    <btn
+      class="fixed right-8 bottom-8 rounded-full bg-white p-2 shadow-xl hover:bg-gray-100"
+      ><svg
+        class="size-13"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+        />
+      </svg>
+    </btn>
+    <!-- scripts -->
     <script type="module" src="main.js"></script>
   </body>
 </html>
