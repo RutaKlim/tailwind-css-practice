@@ -9,18 +9,41 @@
   <body class="relative">
     <!-- Navigation -->
     <nav
-      class="fixed top-0 mx-12 flex w-full items-center bg-white pt-2 pb-2 text-nowrap"
+      class="max-pint-col-3-bp:px-5 fixed top-0 z-50 flex w-full items-center bg-white px-10 pt-2 pb-2 text-nowrap"
     >
-      <a href="#" class="mr-12 shrink-0"
+      <a href="#" class="max-pint-col-3-bp:mr-6 mr-12 shrink-0"
         ><img
           src="img/img/Pinterest-logo.png"
           alt="Pinterest logo"
           class="w-12"
         />
       </a>
-      <a class="font-lg-bold mr-12 text-lg" href="#">Home</a>
-      <a class="font-lg-bold mr-12 text-lg" href="#">Explore</a>
-      <a class="font-lg-bold mr-12 text-lg" href="#">Create</a>
+      <button class="hidden">
+        <span>Home</span>
+        <svg
+          class="size-7 stroke-2 text-gray-400"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </button>
+      <a class="font-lg-bold max-pint-col-3-bp:mr-6 mr-12 text-lg" href="#"
+        >Home</a
+      >
+      <a class="font-lg-bold max-pint-col-3-bp:mr-6 mr-12 text-lg" href="#"
+        >Explore</a
+      >
+      <a class="font-lg-bold max-pint-col-3-bp:mr-6 mr-12 text-lg" href="#"
+        >Create</a
+      >
       <!-- Search bar -->
       <div
         class="flex h-13 w-full cursor-pointer items-center rounded-full bg-gray-100 px-5 hover:bg-gray-200"
@@ -67,7 +90,10 @@
         </div>
       </div>
       <!-- Rest of nav icons -->
-      <a href="#" class="group mx-4 rounded-full p-2 hover:bg-gray-200">
+      <a
+        href="#"
+        class="group max-pint-col-3-bp:mx-2 mx-4 rounded-full p-2 hover:bg-gray-200"
+      >
         <svg
           class="size-9 fill-gray-400 text-white group-hover:text-gray-200"
           xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +109,10 @@
           />
         </svg>
       </a>
-      <a href="#" class="group mr-4 rounded-full p-2 hover:bg-gray-200">
+      <a
+        href="#"
+        class="group max-pint-col-3-bp:mr-2 mr-4 rounded-full p-2 hover:bg-gray-200"
+      >
         <svg
           class="size-9 fill-gray-400 text-white group-hover:text-gray-200"
           xmlns="http://www.w3.org/2000/svg"
@@ -101,13 +130,13 @@
       </a>
       <a
         href="#"
-        class="mr-4 flex items-center justify-center rounded-full p-3 hover:bg-gray-200"
+        class="max-pint-col-3-bp:mr-2 mr-4 flex items-center justify-center rounded-full p-3 hover:bg-gray-200"
         ><span
           class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-gray-600 bg-gray-200 p-3"
           >R</span
         ></a
       >
-      <a href="#" class="mr-4 rounded-full p-1 hover:bg-gray-200">
+      <a href="#" class="rounded-full p-1 hover:bg-gray-200">
         <svg
           class="size-7 stroke-2 text-gray-400"
           xmlns="http://www.w3.org/2000/svg"
@@ -246,6 +275,113 @@
         />
       </svg>
     </btn>
+    <!-- Pin boards -->
+    <div class="mb-24 flex items-center justify-center">
+      <section
+        class="max-pint-col-5-bp:grid-cols-5 max-pint-col-4-bp:grid-cols-4 max-pint-col-3-bp:grid-cols-3 max-pint-col-2-bp:grid-cols-2 grid grid-cols-6 gap-4"
+      >
+        <!-- All pins -->
+        <a href="#">
+          <figure
+            class="relative aspect-3/2 w-60 overflow-hidden rounded-3xl hover:brightness-80"
+          >
+            <img
+              class="absolute right-0 h-full w-30 overflow-hidden rounded-3xl border border-white object-cover"
+              src="img/img/all-pins/img-1.jpg"
+            />
+            <img
+              class="absolute right-7.5 h-full w-30 overflow-hidden rounded-3xl border border-white object-cover"
+              src="img/img/all-pins/img-2.jpg"
+            />
+            <img
+              class="absolute right-15 h-full w-30 overflow-hidden rounded-3xl border border-white object-cover"
+              src="img/img/all-pins/img-3.jpg"
+            />
+            <img
+              class="absolute right-22.5 h-full w-30 overflow-hidden rounded-3xl border border-white object-cover"
+              src="img/img/all-pins/img-4.jpg"
+            />
+            <img
+              class="absolute right-30 h-full w-30 overflow-hidden rounded-3xl border border-white object-cover"
+              src="img/img/all-pins/img-5.jpg"
+            />
+          </figure>
+          <div class="p-3">
+            <div class="font-lg-bold mb-1 text-2xl">All Pins</div>
+            <div class="flex gap-4 text-sm">
+              <span><span>939</span> Pins</span>
+              <div class="text-gray-400"><span>1</span><span>mo</span></div>
+            </div>
+          </div>
+        </a>
+        <!-- Pin board collections -->
+        <a href="#">
+          <figure
+            class="relative grid aspect-3/2 w-60 grid-cols-3 grid-rows-2 overflow-hidden rounded-3xl hover:brightness-80"
+          >
+            <img
+              class="col-span-2 row-span-2 border-r border-white object-fill"
+              src="img/img/pin-collection-1/1--img-1.jpg"
+            />
+            <img src="img/img/pin-collection-1/1--img-2.jpg" />
+            <img
+              class="border-t border-white"
+              src="img/img/pin-collection-1/1--img-3.jpg"
+            />
+          </figure>
+          <div class="p-3">
+            <div
+              id="pinterest-collection-header"
+              class="font-lg-bold mb-1 text-2xl"
+            >
+              Food
+            </div>
+            <div class="flex gap-4 text-sm">
+              <span><span>74</span> Pins</span>
+              <div class="text-gray-400"><span>1</span><span>mo</span></div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <figure class="aspect-3/2 w-60 rounded-3xl border">
+            <img />
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="aspect-3/2 w-60 rounded-3xl border">
+            <img />
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="aspect-3/2 w-60 rounded-3xl border">
+            <img />
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="aspect-3/2 w-60 rounded-3xl border">
+            <img />
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="aspect-3/2 w-60 rounded-3xl border">
+            <img />
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="aspect-3/2 w-60 rounded-3xl border">
+            <img />
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="aspect-3/2 w-60 rounded-3xl border">
+            <img />
+          </figure>
+        </a>
+      </section>
+    </div>
+
+    <!-- I understand that this should be made into a loop but I don't know how that would work so if there would be lots of pin boards with the 'hidden' class, or if there would just be one, in a loop. So I will only put one of each unique pin board. -->
+
     <!-- scripts -->
     <script type="module" src="main.js"></script>
   </body>

@@ -5,4 +5,8 @@
 @theme {
   --font-rubik: "Rubik", "sans-serif";
   --font-weight-lg-bold: 500;
+  --breakpoint-pint-col-5-bp: 98rem;
+  --breakpoint-pint-col-4-bp: 81rem;
+  --breakpoint-pint-col-3-bp: 67rem;
+  --breakpoint-pint-col-2-bp: 49rem;
 }
