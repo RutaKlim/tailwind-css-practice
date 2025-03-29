@@ -9,39 +9,58 @@
   <body class="relative">
     <!-- Navigation -->
     <nav
-      class="max-pint-col-3-bp:px-5 fixed top-0 z-50 flex w-full items-center bg-white px-10 pt-2 pb-2 text-nowrap"
+      class="max-pint-col-4-bp:px-5 fixed top-0 z-50 flex w-full items-center bg-white px-10 pt-2 pb-2 text-nowrap"
     >
       <a href="#" class="max-pint-col-3-bp:mr-6 mr-12 shrink-0"
         ><img
           src="img/img/Pinterest-logo.png"
           alt="Pinterest logo"
-          class="w-12"
+          class="w-12 max-lg:w-9"
         />
       </a>
-      <button class="hidden">
-        <span>Home</span>
-        <svg
-          class="size-7 stroke-2 text-gray-400"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
+      <!-- Drop down button for screen width of 3-col -->
+      <div class="group max-pint-col-3-bp:flex mr-6 hidden">
+        <button class="relative flex cursor-pointer items-center gap-1">
+          <span class="font-lg-bold">More</span>
+          <svg
+            class="size-6 text-gray-500"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </button>
+        <ul
+          class="font-lg-bold invisible absolute -translate-x-5 transform space-y-2 rounded-xl bg-gray-100 p-4 shadow-lg group-hover:visible"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="m19.5 8.25-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </button>
-      <a class="font-lg-bold max-pint-col-3-bp:mr-6 mr-12 text-lg" href="#"
+          <li class="rounded-lg p-2 text-center hover:bg-gray-50">
+            <a class="rounded-lg p-2 text-center hover:bg-gray-50" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="rounded-lg p-2 text-center hover:bg-gray-50">
+            <a href="#">Explore</a>
+          </li>
+          <li class="rounded-lg p-2 text-center hover:bg-gray-50">
+            <a href="#">Create</a>
+          </li>
+        </ul>
+      </div>
+      <!-- --- -->
+      <a class="font-lg-bold max-pint-col-3-bp:hidden mr-12 text-lg" href="#"
         >Home</a
       >
-      <a class="font-lg-bold max-pint-col-3-bp:mr-6 mr-12 text-lg" href="#"
+      <a class="font-lg-bold max-pint-col-3-bp:hidden mr-12 text-lg" href="#"
         >Explore</a
       >
-      <a class="font-lg-bold max-pint-col-3-bp:mr-6 mr-12 text-lg" href="#"
+      <a class="font-lg-bold max-pint-col-3-bp:hidden mr-12 text-lg" href="#"
         >Create</a
       >
       <!-- Search bar -->
@@ -68,8 +87,10 @@
           class="w-full bg-transparent focus:outline-none"
         />
         <!-- Your pins in search bar -->
-        <span class="h-8 w-1 rounded-full bg-gray-300"></span>
-        <div class="font-lg-bold text-md ml-6 flex items-center gap-2">
+        <span class="h-8 w-1 rounded-full bg-gray-300 max-md:hidden"></span>
+        <div
+          class="font-lg-bold text-md ml-6 flex items-center gap-2 max-md:hidden"
+        >
           <span class="text-gray-800">Your Pins</span
           ><span>
             <svg
@@ -278,7 +299,7 @@
     <!-- Pin boards -->
     <div class="mb-24 flex items-center justify-center">
       <section
-        class="max-pint-col-5-bp:grid-cols-5 max-pint-col-4-bp:grid-cols-4 max-pint-col-3-bp:grid-cols-3 max-pint-col-2-bp:grid-cols-2 grid grid-cols-6 gap-4"
+        class="max-pint-col-5-bp:grid-cols-5 max-pint-col-4-bp:grid-cols-4 max-pint-col-3-bp:grid-cols-3 max-pint-col-2-bp:grid-cols-2 max-pint-col-1-bp:grid-cols-1 grid grid-cols-6 gap-4"
       >
         <!-- All pins -->
         <a href="#">
